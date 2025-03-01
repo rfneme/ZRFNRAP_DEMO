@@ -1,7 +1,9 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Consumption - Certificados Status'
 @Metadata.ignorePropagatedAnnotations: true
-define view entity zc_rfrap_certifstproduct as projection on zi_rfrap_certifstProduct
+@Metadata.allowExtensions: true
+define view entity zc_rfrap_certifstproduct
+    as projection on zi_rfrap_certifstProduct
 {
     key StateUuid,
     CertUuid,
